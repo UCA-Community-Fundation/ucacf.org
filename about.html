@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCA Community Foundation</title>
+    <title>About Us - UCA Community Foundation</title>
     <link rel="icon" href="images/logo2.png" type="image/png">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/about.css">
     <script defer src="scripts/global.js"></script>
-    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/about.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +19,31 @@
 </head>
 
 <body>
-
     <!-- Header will be loaded here -->
     <div id="header-placeholder"></div>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">Invest in our community like "angel investor"</h1>
-                <p class="hero-description">Giving back to our community to create a better world for ourselves and our
-                    children!</p>
-                <div class="hero-buttons">
-                    <a href="https://checkout.square.site/merchant/ML0E5S2BY0YHE/checkout/KS6CIYLLFPBYYF42O6NX47LZ"
-                        class="btn btn-primary">Join Us to Donate</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRmXXdcAlm9JVHzTaQj8_RyWkTyxJC0XSFu7ZcHUu104pyuw/viewform"
-                        class="btn btn-secondary">Apply for Grant</a>
+        <!-- Hero Image Slider Section -->
+        <section class="about-hero">
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <img src="images/about1.png" alt="About us image 1" class="slide">
+                    <img src="images/about2.png" alt="About us image 2" class="slide">
+                    <img src="images/about3.png" alt="About us image 3" class="slide">
+                    <img src="images/about4.png" alt="About us image 4" class="slide">
+                    <img src="images/about5.png" alt="About us image 5" class="slide">
+                    <img src="images/about6.png" alt="About us image 6" class="slide">
                 </div>
             </div>
+            
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <h1>ABOUT US</h1>
+            </div>
+            
+            <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+            <button class="slider-btn next-btn" id="nextBtn" aria-label="Next slide">&#10095;</button>
         </section>
 
         <!-- Impact Report Section -->
@@ -103,8 +110,58 @@
             <!-- Services/Programs Grid Section -->
             <div class="impact-services-grid">
                 <div class="impact-container">
+                    <div class="services-cards">
+
+                        <!-- Card 01 -->
+                        <div class="service-card theme-lavender">
+                            <span class="watermark">01</span>
+                            <div class="service-content">
+                                <div class="service-icon bg-navy">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </div>
+                                <h3>Community Grants</h3>
+                                <p>Direct funding and microgrants specifically designed for grassroots organizations
+                                    driving tangible local change.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 02 -->
+                        <div class="service-card theme-pink">
+                            <span class="watermark">02</span>
+                            <div class="service-content">
+                                <div class="service-icon bg-magenta">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                                    </svg>
+                                </div>
+                                <h3>Leadership Programs</h3>
+                                <p>Empowering the next generation of Chinese American youth through structured
+                                    mentorship and civic skill-building.</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 03 -->
+                        <div class="service-card theme-mint">
+                            <span class="watermark">03</span>
+                            <div class="service-content">
+                                <div class="service-icon bg-green">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z" />
+                                    </svg>
+                                </div>
+                                <h3>Civic Engagement</h3>
+                                <p>Amplifying marginalized voices through sustained advocacy, voter education, and
+                                    active policy participation.</p>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="theory-cta">
-                        <a href="about.html" class="btn btn-secondary" style="color: #001A72; border-color: #001A72; margin-right: 15px;">Learn more</a>
                         <a href="https://checkout.square.site/merchant/ML0E5S2BY0YHE/checkout/KS6CIYLLFPBYYF42O6NX47LZ"
                                 class="btn btn-primary">Donate Now</a>
                     </div>
@@ -160,7 +217,6 @@
 
     <!-- Footer will be loaded here -->
     <div id="footer-placeholder"></div>
-
 </body>
 
 </html>
