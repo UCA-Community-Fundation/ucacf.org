@@ -24,6 +24,15 @@
     z-index: 1;
 }
 
+/* Reduce the darkness of the hero overlay to brighten the image */
+        .hero-overlay {
+            opacity: 0.4 !important; 
+        }
+        /* Add a glowing light effect to the text */
+        .hero-title, .hero-description {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+
 .hero-content {
     position: relative;
     z-index: 2;
