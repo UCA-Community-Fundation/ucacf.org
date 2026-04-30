@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application Result - UCA Community Foundation</title>
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="stylesheet" href="styles/global.css">
+    <script defer src="scripts/global.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <style>
+        main {
+            /* Adjust this value if the fixed header's height changes */
+            padding-top: 80px;
+        }
+        .result-section {
+            padding: 0;
+            width: 100%;
+            /* Fills the viewport height minus the header's height */
+            height: calc(100vh - 80px);
+        }
+        .result-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="result-section">
+            <iframe title="UCACF Report (Web)"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZTcyNTYzYWYtNjcwNy00NDI4LWJjN2QtNzRkOGJmYjNjMGRiIiwidCI6IjhiZjI3ZTFjLTY4ZWYtNDhjNy05OGYwLTBiNjNhNzkxYTU2MiIsImMiOjN9"
+                allowFullScreen="true"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
