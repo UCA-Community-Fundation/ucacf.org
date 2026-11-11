@@ -24,19 +24,31 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">Invest in our community like "angel investor"</h1>
-                <p class="hero-description">Giving back to our community to create a better world for ourselves and our
-                    children!</p>
-                <div class="hero-buttons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScRmXXdcAlm9JVHzTaQj8_RyWkTyxJC0XSFu7ZcHUu104pyuw/viewform"
-                        class="btn btn-secondary">Apply for Grant</a>
-                    <a href="https://checkout.square.site/merchant/ML0E5S2BY0YHE/checkout/KS6CIYLLFPBYYF42O6NX47LZ"
-                        class="btn btn-primary">Join Us to Donate</a>
+        <section class="hero-section hero-slider" aria-roledescription="carousel" aria-label="Featured">
+            <!-- Slide 1 -->
+            <div class="hero-slide is-active" style="background-image: url('images/hero2.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Invest in our community like "angel investor"</h1>
+                    <p class="hero-description">Giving back to our community to create a better world for ourselves and our
+                        children!</p>
+                    <div class="hero-buttons">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScRmXXdcAlm9JVHzTaQj8_RyWkTyxJC0XSFu7ZcHUu104pyuw/viewform"
+                            class="btn btn-secondary">Apply for Grant</a>
+                        <a href="https://checkout.square.site/merchant/ML0E5S2BY0YHE/checkout/KS6CIYLLFPBYYF42O6NX47LZ"
+                            class="btn btn-primary">Join Us to Donate</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Slide 2: Veterans Day 2026 (poster shown in full over a blurred backdrop) -->
+            <div class="hero-slide hero-slide--poster" aria-hidden="true">
+                <div class="hero-slide-backdrop" style="background-image: url('images/hero_veterans2026.png');"></div>
+                <img class="hero-slide-poster" src="images/hero_veterans2026.png"
+                    alt="Veterans Day, November 11 - Honoring all who served" loading="lazy">
+            </div>
+
+            <div class="hero-dots" role="tablist" aria-label="Choose slide"></div>
         </section>
 
         <!-- Impact Report Section -->

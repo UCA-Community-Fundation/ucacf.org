@@ -3,15 +3,93 @@
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: url('../images/hero2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    background-color: #111;
+}
+
+/* Hero Slider */
+.hero-slide {
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.hero-slide.is-active {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.hero-slide.is-leaving {
+    transform: translateX(-100%);
+    visibility: visible;
+}
+
+.hero-slide.is-animating {
+    transition: transform 0.9s ease-in-out;
+}
+
+/* Keep the poster clear of the fixed header */
+.hero-slide--poster {
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+
+.hero-slide-backdrop {
+    position: absolute;
+    inset: -40px;
+    background-size: cover;
+    background-position: center;
+    filter: blur(28px) brightness(0.85);
+}
+
+.hero-slide-poster {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 5;
+}
+
+.hero-dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.hero-dot.is-active {
+    background: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide.is-animating {
+        transition: none;
+    }
 }
 
 .hero-overlay {
